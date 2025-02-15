@@ -21,7 +21,7 @@ const LoginPage = () => {
       bgC: "bg-blue-500",
       tC: "text-white",
       w: "w-full",
-      pad: "p-3"
+      pad: "p-3",
     },
     {
       id: 3,
@@ -82,13 +82,17 @@ const LoginPage = () => {
           <CustomBtn {...btnData[2]} />
         </div>
 
-        <div className="space-y-6 mt-20">
-     <div className="flex items-center gap-3">
-     <div className="h-px  w-full bg-gray-200"></div>
+        <div className="space-y-6 mt-16">
 
-<p className="text-gray-500 mb-8 whitespace-nowrap">Don't have an Upwork account?</p>
-<div className="h-px  w-full bg-gray-200"></div>
-     </div>
+          <div className="flex items-center gap-3 m-8">
+            <div className="h-px  w-full bg-gray-200"></div>
+
+            <p className="text-gray-500 whitespace-nowrap">
+              Don't have an Upwork account?
+            </p>
+            <div className="h-px  w-full bg-gray-200"></div>
+          </div>
+
 
           <Link to="/signup">
             <div className="flex justify-center  whitespace-nowrap">
