@@ -71,7 +71,7 @@ const LoginPage = () => {
           <CustomBtn {...btnData[0]} />
         </div>
 
-        <div className="m-8 flex items-center gap-3">
+        <div className="my-8 mx-4 flex items-center gap-3">
           <div className="h-px  w-full bg-gray-200"></div>
           <p className="text-gray-400">or</p>
           <div className="h-px  w-full bg-gray-200"></div>
@@ -84,7 +84,7 @@ const LoginPage = () => {
 
         <div className="space-y-6 mt-16">
 
-          <div className="flex items-center gap-3 m-8">
+          <div className="flex items-center gap-3 my-8 mx-4">
             <div className="h-px  w-full bg-gray-200"></div>
 
             <p className="text-gray-500 whitespace-nowrap">

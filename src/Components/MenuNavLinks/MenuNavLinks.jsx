@@ -63,16 +63,16 @@ const MenuNavLinks = ({ setIsMenu, isMenu }) => {
                 onClick={() => setIsMenu(!isMenu)}
               />
             </button>
-            <h1 className="font-bold text-lg">FullstackSage</h1>
+            <h1 className="font-bold text-lg cursor-pointer" onClick={() => setIsMenu(!isMenu)} >FullstackSage</h1>
           </div>
           <IoSearch className="text-2xl" />
         </div>
 
-        <div className="space-y-12 mx-4 mt-6 mb-32">
+        <div className="space-y-12 mt-6 mb-32">
           {menuNavItems.map((menuItem) => (
             <div
               key={menuItem.id}
-              className=""
+              className="cursor-pointer"
               onClick={() => handleNavLinks(menuItem.id)}
             >
               <MenuNavBtn menuItem={menuItem} />

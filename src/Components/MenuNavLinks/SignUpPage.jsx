@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-
 import { PiSuitcaseSimple } from "react-icons/pi";
 import { AiOutlineLaptop } from "react-icons/ai";
 import CustomRadioBtn from "./CustomRadioBtn";
-import CustomSignUpBtn from "./CustomSignUpBtn";
+import CustomSignUpBtn2 from "./CustomSignUpBtn2";
 import { Link } from "react-router-dom";
 
 const SignUpPage = () => {
@@ -36,10 +35,14 @@ const SignUpPage = () => {
   return (
     <div className="bg-white z-10 inset-0 absolute top-0">
       <div className="p-4">
-        <h1 className="font-bold text-lg">FullstackSage</h1>
+        <h1 className="font-bold text-lg">
+          <Link to="/">
+           FullstackSage
+           </Link>
+           </h1>
 
         <div className="">
-          <p className="mt-10 text-2xl text-center mb-8">
+          <p className="mt-10 text-2xl  text-center mb-8">
             Join as a client or freelancer
           </p>
 
@@ -55,14 +58,14 @@ const SignUpPage = () => {
                 workType
                   .filter((data) => data.isActive)
                   .map((data) => (
-                    <CustomSignUpBtn
+                    <CustomSignUpBtn2
                       key={data.id}
                       label="Create Account"
                       data={data}
                     />
                   ))
               ) : (
-                <CustomSignUpBtn label="Create Account" data={null} />
+                <CustomSignUpBtn2 label="Create Account" data={null} />
               )}
             </div>
           </div>
@@ -71,7 +74,7 @@ const SignUpPage = () => {
             <p>
               Already have an account?{" "}
               <Link to="/login">
-                <span>Log In</span>{" "}
+                <span className="text-green-600 underline underline-offset-2">Log In</span>
               </Link>
             </p>
           </div>
